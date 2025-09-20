@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avoid Cash Crop Loss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Farming Web Page</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Farming</a>
+            <a href="#crops">Crops</a>
+            <a href="#cashcroploss">Cash Crop Loss</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="content">
+            <h1>Welcome to Avoid Cash Crop Loss</h1>
+            <p>Helping farmers reduce crop losses through advanced tools and techniques.</p>
+        </div>
+    </section>
+
+    <!-- Crops Information Section -->
+    <section id="crops">
+        <div class="content">
+            <h2>Learn About Common Crops</h2>
+            <div class="crop-info">
+                <div class="crop-card">
+                    <img src="images/rice.jpg" alt="Rice">
+                    <h3>Rice</h3>
+                    <p>Rice is a staple food for more than half of the world's population. It thrives in warm climates with plenty of water.</p>
+                    <ul>
+                        <li><strong>Ideal Temperature:</strong> 20-30°C</li>
+                        <li><strong>Soil Type:</strong> Clay or loam with high moisture retention</li>
+                        <li><strong>Growing Season:</strong> Kharif season (June to November)</li>
+                    </ul>
+                </div>
+                <div class="crop-card">
+                    <img src="images/corn.jpg" alt="Corn">
+                    <h3>Corn</h3>
+                    <p>Corn, also known as maize, is a versatile crop grown for food, fodder, and industrial uses.</p>
+                    <ul>
+                        <li><strong>Ideal Temperature:</strong> 21-27°C</li>
+                        <li><strong>Soil Type:</strong> Well-drained loamy soil</li>
+                        <li><strong>Growing Season:</strong> Summer or early spring</li>
+                    </ul>
+                </div>
+                <div class="crop-card">
+                    <img src="images/wheat.jpg" alt="Wheat">
+                    <h3>Wheat</h3>
+                    <p>Wheat is one of the world's most important cereal crops, used primarily for bread-making and other food products.</p>
+                    <ul>
+                        <li><strong>Ideal Temperature:</strong> 10-24°C</li>
+                        <li><strong>Soil Type:</strong> Well-drained clay loam</li>
+                        <li><strong>Growing Season:</strong> Rabi season (November to April)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cash Crop Loss Section -->
+    <section id="cashcroploss">
+        <div class="content">
+            <h2>Understand Cash Crop Loss</h2>
+            <p>Determine the most suitable crop to cultivate based on your location, weather conditions, and soil data:</p>
+            
+            <form id="cropForm">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Enter your location" required>
+
+                <label for="soilMoisture">Soil Moisture (%):</label>
+                <input type="number" id="soilMoisture" name="soilMoisture" placeholder="Enter soil moisture percentage" required min="0" max="100">
+
+                <label for="soilPH">Soil pH:</label>
+                <input type="number" id="soilPH" name="soilPH" placeholder="Enter soil pH value" required min="0" max="14">
+
+                <button type="submit">Get Recommendation</button>
+            </form>
+
+            <div id="recommendation"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Avoid Cash Crop Loss. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
